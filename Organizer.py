@@ -12,7 +12,7 @@ trash_path = Path.home() / "Trash"
 days_to_move_to_trash = 60
 days_to_notify_trash = 80
 days_to_remove_trash = 100
-wait_interval_seconds = 3600
+wait_interval_seconds = 7200
 notification_length = 5
 
 def clean_desktop():
@@ -111,6 +111,7 @@ def wait():
 
 
 def main():
+    while True:
         clean_desktop()
         downloads_files_separation()
         trash_separation()
